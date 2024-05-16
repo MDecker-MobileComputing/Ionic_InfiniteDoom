@@ -1,0 +1,7 @@
+{
+  "name": "InfiniteDoom",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
