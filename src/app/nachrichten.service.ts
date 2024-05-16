@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 
 /**
- * Klasse für Service, der zufällige schlechte Nachrichten erzeugt.
+ * Service, der zufällige schlechte Nachrichten erzeugt.
  */
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,7 @@ import { Injectable } from '@angular/core';
 export class NachrichtenService {
 
   /**
-   * Erzeugt eine oder mehrere zufällige schlechtenNachrichten.
+   * Erzeugt eine oder mehrere zufällige Nachrichten.
    *
    * @param anzahl Anzahl zu erzeugender Nachrichten, Defaultwert: 1
    *
@@ -64,6 +64,8 @@ export class NachrichtenService {
                              "Rohstoffknappheit",
                              "Schiffskollision",
                              "Skandal",
+                             "Smog-Alarm",
+                             "Stromausfall",
                              "Tierseuche",
                              "Unwetter",
                              "Überfall",
@@ -90,10 +92,12 @@ export class NachrichtenService {
                         "Schleswig-Holstein",
                         "Thüringen",
                         "Albanien", // ab jetzt Nationen
+                        "Amerika",
                         "Andorra",
                         "Belgien",
                         "Bosnien und Herzegowina",
                         "Bulgarien",
+                        "China",
                         "Dänemark",
                         "Estland",
                         "Finnland",
@@ -102,6 +106,8 @@ export class NachrichtenService {
                         "Irland",
                         "Island",
                         "Italien",
+                        "Japan",
+                        "Kanada",
                         "Kosovo",
                         "Kroatien",
                         "Lettland",
@@ -116,6 +122,7 @@ export class NachrichtenService {
                         "Niederlande",
                         "Norwegen",
                         "Österreich",
+                        "Panama",
                         "Polen",
                         "Portugal",
                         "Rumänien",
@@ -124,9 +131,11 @@ export class NachrichtenService {
                         "Schweden",
                         "Schweiz",
                         "Serbien",
+                        "Singapur",
                         "Slowakei",
                         "Slowenien",
                         "Spanien",
+                        "Taiwan",
                         "Tschechien",
                         "Türkei",
                         "Ukraine",
@@ -135,6 +144,4 @@ export class NachrichtenService {
                         "Vereinigtes Königreich",
                         "Weißrussland"
                       ];
-
-
 }
