@@ -10,6 +10,16 @@ import { Injectable } from '@angular/core';
 export class NachrichtenService {
 
   /**
+   * Konstruktor, schreibt Anzahl der Ereignisse und Orte auf die Konsole.
+   */
+  constructor() {
+
+    console.log( `Anzahl Ereignisse: ${this.ereignisArray.length}` );
+    console.log( `Anzahl Orte      : ${this.ortArray.length}`      );
+  }
+
+
+  /**
    * Erzeugt eine oder mehrere zufällige Nachrichten.
    *
    * @param anzahl Anzahl zu erzeugender Nachrichten, Defaultwert: 1
@@ -34,19 +44,26 @@ export class NachrichtenService {
       ergebnisArray.push( nachricht );
     }
 
+    console.log( `${anzahl} Nachrichten erzeugt:`, anzahl );
+
     return ergebnisArray;
   }
 
 
   /** Schlimme Ereignisse in alphabetischer Reihenfolge */
-  readonly ereignisArray = [ "Amoklauf",
+  readonly ereignisArray = [ "Altersarmut",
+                             "Amoklauf",
+                             "Ausgangs-Sperre",
+                             "Ärztemangel",
                              "Ausschreitungen",
                              "Bankrott",
+                             "Bildungsnotstand",
                              "Busunfall",
                              "Brandstiftung",
                              "Chemie-Unfall",
                              "Cyberangriff",
                              "Doping-Skandal",
+                             "Drogenkriminalität",
                              "Dürre",
                              "Enführung",
                              "Erdbeben",
@@ -54,9 +71,12 @@ export class NachrichtenService {
                              "Erpressung",
                              "Gewaltserie",
                              "Großbrand",
+                             "Hausbesetzung",
                              "Hitzewelle",
                              "Korruption",
                              "Lawine",
+                             "Lebensmittelskandal",
+                             "Lehrermangel",
                              "Massenkarambolage",
                              "Mord",
                              "Ölkatastrophe",
@@ -65,6 +85,7 @@ export class NachrichtenService {
                              "Schiffskollision",
                              "Skandal",
                              "Smog-Alarm",
+                             "Studentenproteste",
                              "Stromausfall",
                              "Tierseuche",
                              "Unwetter",

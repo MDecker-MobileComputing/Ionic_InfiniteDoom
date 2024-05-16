@@ -7,6 +7,7 @@
 <ion-content [fullscreen]="true">
 
   <ion-content>
+
     <ion-list>
       <ion-item *ngFor="let nachricht of nachrichtenArray; let index">
         <ion-avatar slot="start">
@@ -15,9 +16,11 @@
         <ion-label>{{ nachricht }}</ion-label>
       </ion-item>
     </ion-list>
-    <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
+
+    <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)" threshold="5%">
       <ion-infinite-scroll-content></ion-infinite-scroll-content>
     </ion-infinite-scroll>
+
   </ion-content>
 
 </ion-content>

@@ -39,19 +39,24 @@ export class HomePage implements OnInit {
    */
   private nachrichtenErzeugen() {
 
-    const neueNachrichten = this.nachrichtenService.erzeugeNachrichten( 50 );
+    const neueNachrichten = this.nachrichtenService.erzeugeNachrichten( 15 );
     this.nachrichtenArray.push( ... neueNachrichten ); // Spread-Operator
   }
 
 
   /**
-   * Event
-   * @param event
+   * Neue Nachrichten erzeugen, wenn der Nutzer weit genug gescrollt
+   * hat, und warten dann eine bestimmte Zeitspanne lang.
+   *
+   * @param event Event-Objekt des Infinite-Scroll-Events
    */
   onIonInfinite( event: InfiniteScrollCustomEvent ) {
 
+    const wartezeitMillisekunden = 750;;
+
     this.nachrichtenErzeugen();
-    setTimeout(() => { event.target.complete(); }, 500);
+
+    setTimeout( () => { event.target.complete(); }, wartezeitMillisekunden ) ;
   }
 
 }
