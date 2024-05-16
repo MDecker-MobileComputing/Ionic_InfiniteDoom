@@ -48,7 +48,9 @@ export class HomePage implements OnInit {
    * Neue Nachrichten erzeugen, wenn der Nutzer weit genug gescrollt
    * hat, und warten dann eine bestimmte Zeitspanne lang.
    *
-   * @param event Event-Objekt des Infinite-Scroll-Events
+   * @param event Event-Objekt des Infinite-Scroll-Events. Wenn das
+   *              Laden der neuen Daten abgeschlossen ist, dann muss
+   *              die Methode `complete()` aufgerufen werden.
    */
   onIonInfinite( event: InfiniteScrollCustomEvent ) {
 
