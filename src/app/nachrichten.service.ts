@@ -69,6 +69,7 @@ export class NachrichtenService {
                              "Erdbeben",
                              "Erdrutsch",
                              "Erpressung",
+                             "Explosion",
                              "Gewaltserie",
                              "Großbrand",
                              "Hausbesetzung",
@@ -92,7 +93,8 @@ export class NachrichtenService {
                              "Überfall",
                              "Überschwemmung",
                              "Wahlmanipulation",
-                             "Wirtschaftskrise"
+                             "Wirtschaftskrise",
+                             "Vulkanausbruch"
                           ];
 
   /** Array mit verschiedenen Orten; zuerst die deutschen Bundesländer, dann Nationen. */
