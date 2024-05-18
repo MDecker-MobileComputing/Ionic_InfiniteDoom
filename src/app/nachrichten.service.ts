@@ -72,6 +72,7 @@ export class NachrichtenService {
                              "Explosion",
                              "Gewaltserie",
                              "Großbrand",
+                             "Großschadenslage",
                              "Hausbesetzung",
                              "Hitzewelle",
                              "Korruption",
