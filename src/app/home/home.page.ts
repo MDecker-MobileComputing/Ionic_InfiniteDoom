@@ -54,7 +54,7 @@ export class HomePage implements OnInit {
    */
   onIonInfinite( event: InfiniteScrollCustomEvent ) {
 
-    const wartezeitMillisekunden = 750;;
+    const wartezeitMillisekunden = 1500;
 
     this.nachrichtenErzeugen();
 
