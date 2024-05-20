@@ -95,6 +95,8 @@ export class NachrichtenService {
                              "Überfall",
                              "Überschwemmung",
                              "Wahlmanipulation",
+                             "Waldbrand",
+                             "Waldsterben",
                              "Wirtschaftskrise",
                              "Vulkanausbruch"
                           ];
