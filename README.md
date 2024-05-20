@@ -2,7 +2,9 @@
 
 <br>
 
-Die Ionic-App zeigt zufällig erzeugte Schlagzeigen von negativen Ereignissen in einem [Infinite Scroll](https://ionicframework.com/docs/api/infinite-scroll)-Element an.
+Die Ionic-App zeigt eine endlose Liste von zufällig erzeugte Negativschlagzeilen mit 
+[Infinite Scrolling](https://ionicframework.com/docs/api/infinite-scroll) und Paginierung
+an.
 
 <br>
 
