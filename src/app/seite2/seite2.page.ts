@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { NachrichtenService } from '../nachrichten.service';
 
+
 @Component({
   selector: 'app-seite2',
   templateUrl: './seite2.page.html',

@@ -52,13 +52,16 @@ export class HomePage implements OnInit {
    *              Laden der neuen Daten abgeschlossen ist, dann muss
    *              die Methode `complete()` aufgerufen werden.
    */
+
+
   onIonInfinite( event: InfiniteScrollCustomEvent ) {
 
-    const wartezeitMillisekunden = 1500;
+    const wartezeitMillisekunden = 5000;
 
     this.nachrichtenErzeugen();
 
-    setTimeout( () => { event.target.complete(); }, wartezeitMillisekunden ) ;
+    setTimeout( () => { event.target.complete(); }, 
+                wartezeitMillisekunden ) ;
   }
 
 }

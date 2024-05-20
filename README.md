@@ -3,8 +3,9 @@
 <br>
 
 Die Ionic-App zeigt eine endlose Liste von zufällig erzeugte Negativschlagzeilen mit 
-[Infinite Scrolling](https://ionicframework.com/docs/api/infinite-scroll) und Paginierung
-an.
+[Infinite Scrolling](https://ionicframework.com/docs/api/infinite-scroll) und einem 
+"Load More"-Button am Ende der Liste als Alternative.
+
 
 <br>
 
@@ -18,7 +19,7 @@ Der Name der App bezieht sich auf den Begriff [Doomscrolling](https://www.spiege
 
 <br>
 
-![Screenshot](screenshot_1.png)
+![Screenshot: Infinite Scrolling](screenshot_1.png) &nbsp; ![Screenshot: Paging](screenshot_2.png)
 
 <br>
 
