@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  
+  /**
+   * Konstruktor für Dependency Injection.
+   */
+  constructor( private menuController: MenuController ) {}
+
+
+  /**
+   * Event-Handler-Methode für das Schließen des Menüs.
+   */
+  menuSchliessen(  ) {
+
+    this.menuController.close();
+  }  
 }

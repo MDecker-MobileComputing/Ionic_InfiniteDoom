@@ -25,7 +25,8 @@ export class NachrichtenService {
    * @param anzahl Anzahl zu erzeugender Nachrichten, Defaultwert: 1
    *
    * @returns Array mit zufällig erzeugten Nachrichten.
-   *          Die Nachrichten entsprechen dem Muster ">Ereignis< in >Ort<".
+   *          Die Nachrichten entsprechen dem Muster ">Ereignis< in >Ort<",
+   *          z.B. "Alterarmut in Bayern".
    */
   public erzeugeNachrichten( anzahl: number = 1 ): string[] {
 
@@ -36,8 +37,8 @@ export class NachrichtenService {
       const index1          = Math.floor( Math.random() * this.ereignisArray.length );
       const zufallsEreignis = this.ereignisArray[ index1 ];
 
-      const index2        = Math.floor( Math.random() * this.ortArray.length );
-      const zufallsOrt    = this.ortArray[ index2 ];
+      const index2     = Math.floor( Math.random() * this.ortArray.length );
+      const zufallsOrt = this.ortArray[ index2 ];
 
       const nachricht = `${zufallsEreignis} in ${zufallsOrt}`;
 
@@ -70,6 +71,8 @@ export class NachrichtenService {
                              "Erdrutsch",
                              "Erpressung",
                              "Explosion",
+                             "Finanzkrise",
+                             "Gasexplosion",
                              "Gewaltserie",
                              "Geflügerpest",
                              "Großbrand",
@@ -91,7 +94,7 @@ export class NachrichtenService {
                              "Schiffskollision",
                              "Skandal",
                              "Smog-Alarm",
-                             "Studentenproteste",
+                             "Studierendenproteste",
                              "Stromausfall",
                              "Tierseuche",
                              "Unwetter",
@@ -103,6 +106,7 @@ export class NachrichtenService {
                              "Wirtschaftskrise",
                              "Vulkanausbruch"
                           ];
+
 
   /** Array mit verschiedenen Orten; zuerst die deutschen Bundesländer, dann Nationen. */
   readonly ortArray = [ "Baden-Württemberg",
