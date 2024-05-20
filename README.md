@@ -21,6 +21,8 @@ Der Name der App bezieht sich auf den Begriff [Doomscrolling](https://www.spiege
 
 ![Screenshot: Infinite Scrolling](screenshot_1.png) &nbsp; ![Screenshot: Paging](screenshot_2.png)
 
+![Screenshot: Navigationsmenü ausgeklappt](screenshot_3.png)
+
 <br>
 
 ----
