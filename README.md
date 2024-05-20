@@ -2,7 +2,7 @@
 
 <br>
 
-Die Ionic-App zeigt eine endlose Liste von zufällig erzeugte Negativschlagzeilen mit 
+Die Ionic-App zeigt eine endlose Liste von zufällig erzeugten Negativschlagzeilen mit 
 [Infinite Scrolling](https://ionicframework.com/docs/api/infinite-scroll) und einem 
 "Load More"-Button am Ende der Liste als Alternative.
 
@@ -15,7 +15,7 @@ Der Name der App bezieht sich auf den Begriff [Doomscrolling](https://www.spiege
 
 ----
 
-## Screenshot ##
+## Screenshots ##
 
 <br>
 
