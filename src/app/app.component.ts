@@ -20,5 +20,6 @@ export class AppComponent {
   menuSchliessen(  ) {
 
     this.menuController.close();
-  }  
+  }
+  
 }
