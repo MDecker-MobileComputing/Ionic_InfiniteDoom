@@ -7,6 +7,7 @@ import { NachrichtenService } from '../nachrichten.service';
   selector: 'app-seite2',
   templateUrl: './seite2.page.html',
   styleUrls: ['./seite2.page.scss'],
+  standalone: false
 })
 export class Seite2Page implements OnInit {
 
@@ -52,6 +53,7 @@ export class Seite2Page implements OnInit {
       this.ladespinnerAnzeigen = false;
     }, wartezeitMillisekunden ) ;    
   }
+
 
   /**
    * Erzeugt weitere neue schlechte Nachrichten und fügt sie dem Member-Array hinzu.
